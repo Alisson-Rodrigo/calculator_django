@@ -1,0 +1,215 @@
+:root {
+    --color-primary: #269fe6;
+    --color-primary-hover: #2086c2;
+    --color-primary-dark: #13141f;
+    --color-primary-dark-hover: #212336;
+    --color-primary-light: #d4ecfa;
+    --color-primary-light-hover: #bdd8e7;
+
+    --color-white: #fff;
+    --color-black: #000;
+
+    --color-dark-text: #444;
+    --color-info-light: #cce5ff;
+    --color-debug-light: #cce5ff;
+    --color-success-light: #d4edda;
+    --color-alert-light: #fff3cd;
+    --color-warning-light: #fff3cd;
+    --color-error-light: #f8d7da;
+
+    --color-info-dark: #4d86c4;
+    --color-debug-dark: #4d86c4;
+    --color-success-dark: #4a9c5d;
+    --color-alert-dark: #927f40;
+    --color-warning-dark: #927f40;
+    --color-error-dark: #da525d;
+
+    --color-gray-0: #f9f9f9;
+    --color-gray-1: #e0e0e0;
+    --color-gray-2: #c7c7c7;
+    --color-gray-3: #aeaeae;
+    --color-gray-4: #959595;
+    --color-gray-5: #7d7d7d;
+    --color-gray-6: #646464;
+    --color-gray-7: #4b4b4b;
+    --color-gray-8: #323232;
+    --color-gray-9: #191919;
+
+    --font-primary: sans-serif;
+    --font-headings: 'Roboto Slab', serif;
+
+    --spacing-gutter-medium: 3rem;
+    --spacing-gutter-large: 4rem;
+}
+
+/* DEFAULT CSS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+  }
+  
+  body {
+    background: url(/img/background.png) #cfcfcf;
+    color: #111111;
+    font-size: 16px;
+  
+    /* FLEX */
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  
+  body,
+  input,
+  textarea,
+  button {
+    font-family: "Roboto", sans-serif;
+  }
+  
+  html,
+  body {
+    height: 100%;
+  }
+  
+  /* CALCULATOR CONTAINER */
+  .calculator {
+    animation: sideIn 480ms cubic-bezier(0.42, 0, 0.21, 1);
+    background-color: #2f2b39;
+    border-radius: 2px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+    padding: 10px 20px;
+    width: 252px;
+  }
+  
+  /* DISPLAY */
+  .display {
+    margin: 50px 0 60px;
+    text-align: right;
+  }
+  
+  .display input {
+    background: transparent;
+    border: none;
+    color: #f2f2f2;
+    font-size: 40px;
+    font-weight: 400;
+    text-align: right;
+    width: 100%;
+  }
+  
+  .display h2 {
+    color: #6d53d6;
+    font-size: 15px;
+    font-weight: 500;
+    height: 18px;
+  }
+  
+  /* ROW GRID */
+  .row {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    margin-bottom: 10px;
+  }
+  
+  /* BUTTON */
+  .button {
+    background-color: transparent;
+    border: none;
+    border-radius: 2px;
+    color: #f2f2f2;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    height: 50px;
+    margin: 2px;
+    transition: all 0.15s ease-in-out;
+    width: 50px;
+  }
+  
+  .button:hover {
+    transform: scale(1.04);
+  }
+  .button:active {
+    transform: scale(0.97);
+  }
+  
+  /* COLORS */
+  .gray {
+    background-color: #eaeaea;
+    color: #2f2d38;
+  }
+  
+  .purple {
+    background-color: #7d5dfe;
+    color: #f2f2f2;
+  }
+  
+  .purple-text {
+    color: #7d5dfe;
+  }
+  
+  /* GIT HUB LOGO/LINK */
+  .github {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+  }
+  
+  .github a {
+    opacity: 0.8;
+    transition: all 0.15s ease-in-out;
+  }
+  
+  .github a img {
+    transform: scale(0.9);
+    transition: all 0.15s ease-in-out;
+  }
+  
+  .github a:hover {
+    opacity: 1;
+  }
+  
+  .github a:hover img {
+    transform: scale(1);
+  }
+  
+  /* ANIMATION */
+  @keyframes sideIn {
+    from {
+      transform: translateY(-150px);
+      opacity: 0;
+    }
+  
+    50% {
+      transform: translateY(-75px);
+    }
+  
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+body {
+    background-color: #130F1A;
+}
+
+.title{
+    color: #B67808;
+    font-size: 4rem;
+    font-family: 'Roboto Slab', serif;
+}
+
+.fa-calculator{
+    color: white;
+    font-size: 4rem;
+    padding-left: 2rem;
+}
+
+.title-and-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
